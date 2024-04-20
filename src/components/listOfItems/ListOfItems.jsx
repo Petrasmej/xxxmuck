@@ -23,10 +23,6 @@ export const ListOfItems = () => {
     fetchItems();
   }, []);
 
-  const handleProductClick = (productId) => {
-    setSelectedProduct(productId);
-  };
-
   //if (loading) return <div>Loading...</div>;
 
   return (
