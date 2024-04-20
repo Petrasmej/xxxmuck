@@ -9,11 +9,17 @@ import { App } from './components/app/App';
 const router = createBrowserRouter([
   {
     path: '/',
-    element: <HomePage />,
-  },
-  {
-    path: '/product/:productId',
-    element: <ProductPage />,
+    element: <App />,
+    children: [
+      {
+        index: true,
+        element: <HomePage />,
+      },
+      {
+        path: 'product/:productId',
+        element: <ProductPage />,
+      },
+    ],
   },
 ]);
 
