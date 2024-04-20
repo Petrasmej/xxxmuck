@@ -1,20 +1,19 @@
-import { HomePage } from './pages/HomePage';
-import './global.css';
 import React from 'react';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import { ProductPage } from './pages/ProductPage';
 import { createRoot } from 'react-dom/client';
+import './global.css';
+import { HomePage } from './pages/HomePage';
+import { ProductPage } from './pages/ProductPage';
+import { App } from './components/app/App';
 
 const router = createBrowserRouter([
   {
     path: '/',
     element: <HomePage />,
-    children: [
-      {
-        path: '/product/:productId',
-        element: <ProductPage />,
-      },
-    ],
+  },
+  {
+    path: '/product/:productId',
+    element: <ProductPage />,
   },
 ]);
 

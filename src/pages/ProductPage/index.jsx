@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import { ListOfItems } from '../../components/listOfItems/listOfItems';
+import './style.css';
 
 export const ProductPage = () => {
   const { productId } = useParams();
@@ -24,7 +26,7 @@ export const ProductPage = () => {
 
   return (
     <div className="productDetail">
-      <img src={product.photo} />
+      <img src={product.image} />
       <div className="rightBox">
         <p>{product.name}</p>
         <button className="button">Objednat</button>

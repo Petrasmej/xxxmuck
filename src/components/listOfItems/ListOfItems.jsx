@@ -6,7 +6,6 @@ import './style.css';
 
 export const ListOfItems = () => {
   const [items, setItems] = useState([]);
-  const [selectedProduct, setSelectedProduct] = useState(null);
 
   useEffect(() => {
     const fetchItems = async () => {
