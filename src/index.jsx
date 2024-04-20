@@ -17,7 +17,7 @@ createRoot(document.querySelector('#app')).render(
     <Routes>
       <Route path="/" element={<App />}>
         <Route path="" element={<HomePage />} />
-        <Route path="product/:id" element={<ProductPage />} />
+        <Route path="product/:productId" element={<ProductPage />} />
       </Route>
     </Routes>
   </BrowserRouter>,

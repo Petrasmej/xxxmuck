@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { ListOfItems } from '../../components/listOfItems/listOfItems';
 import './style.css';
 
 export const ProductPage = () => {
